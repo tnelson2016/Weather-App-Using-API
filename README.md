@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather Finder
 
-## Available Scripts
+A React weather app that looks up current conditions for any city, state, and country using the OpenWeatherMap API.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Search weather by city, state/region, and country
+- Displays temperature, humidity, and current conditions
+- Clean, responsive UI with a full-bleed background image
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- **Frontend:** React 16.8.6 (Create React App)
+- **API:** [OpenWeatherMap](https://openweathermap.org/api)
+- **Deployment:** GitHub Pages (`gh-pages`)
 
-### `npm test`
+## Running Locally
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was built with an older version of `react-scripts` (3.0.1), which has a known incompatibility with `fsevents` on modern Node versions (18+) via macOS. To run it locally:
 
-### `npm run build`
+```bash
+nvm install 16
+nvm use 16
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You'll also need an OpenWeatherMap API key. Create a `.env` file in the project root:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Known Issues
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Dependency tree includes many outdated packages (flagged by GitHub Dependabot) due to the project's 2019-era `react-scripts` version. These are dev dependencies and don't affect runtime behavior.
 
-### `npm run eject`
+## Status
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Fully functional — tested locally with live API calls returning real weather data.
