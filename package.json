@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://tnelson2016.github.io/Weather-App-Using-API/",
+  "homepage": "https://tnelson2016.github.io/Weather-App-Using-API/",
   "dependencies": {
     "bootstrap": "^3.4.1",
     "gh-pages": "^2.0.1",
